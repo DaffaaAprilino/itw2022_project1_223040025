@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+header {
+  height: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  background-color: #24252b;
+}
+
+/* Navbar */
+.hero {
+  width: 100vw;
+  height: 9vh;
+  background-color: #24252b;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
+  padding-top: 10px;
+}
+
+.hero h3 {
+  padding: 1em;
+  color: #6366f1;
+  letter-spacing: 3px;
+}
+
+.hero ul,
+li a {
+  list-style: none;
+  display: flex;
+  padding: 1em;
+  margin: 0;
+}
+
+.hero li a {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin: 0.5em;
+  padding: 10px 15px;
+  color: #f5f5f5;
+  border-radius: 20px;
+}
+
+li a:hover {
+  background-color: #6366f1;
+}
+
+/* jumbtoron */
+.jumbotron {
+  padding: 180px 0;
+}
+
+.jumbotron .container {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  padding: -100px;
+  margin-left: 300px;
+}
+
+.jumbotron .container h1 {
+  font-size: 30px;
+  color: #f5f5f5;
+}
+
+.jumbotron .container h1 span {
+  color: #6366f1;
+}
+
+.jumbotron .container p {
+  font-style: italic;
+  font-size: 20px;
+  color: #f5f5f5;
+  line-height: 22px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.fotopribadi img {
+  width: 300px;
+  height: auto;
+  /* position: absolute; */
+  bottom: 0;
+  margin: -10px -50px;
+  z-index: -999;
+}
+
+.container .button {
+  background: #6366f1;
+  border-radius: 5px;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.container .button:hover {
+  background: transparent;
+  color: white;
+  border: 1px solid #6366f1;
+}
+
+/* About */
+.about {
+  padding: 80px 0;
+}
+
+.about img {
+  height: auto;
+  width: 290px;
+  border-radius: 20px;
+  margin-left: 40px;
+}
+
+.about-text {
+  width: 550px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about h2 {
+  font-size: 40px;
+  color: #6366f1;
+  margin: 50px 0;
+  text-align: center;
+  text-shadow: 2px 3px 2px black;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.about-text p {
+  color: #f5f5f5;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+
+.about-text a i {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  padding-bottom: 100px;
+}
+
+/* Skills */
+.skills {
+  padding: 50px 0;
+  height: 300px;
+}
+
+.skills h2 {
+  font-size: 40px;
+  color: #6366f1;
+  margin: 30px 0;
+  text-align: center;
+  text-shadow: 2px 3px 2px black;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.myskills p {
+  font-size: 20px;
+  color: #f5f5f5;
+  line-height: 22px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.myskills p span {
+  color: #6366f1;
+}
+
+.iconskills {
+  display: flex;
+  justify-content: center;
+}
+
+.iconskills img {
+  height: 110px;
+  width: auto;
+  float: left;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Projects */
+.projects {
+  padding: 50px 0;
+  height: 300px;
+}
+
+.projects h2 {
+  font-size: 40px;
+  color: #6366f1;
+  margin: 30px 0;
+  text-align: center;
+  text-shadow: 2px 3px 2px black;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+  display: flex;
+  justify-content: center;
+}
+
+.row:after {
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 1px 1px 8px 0 rgba(99, 102, 241, 1); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card img {
+  height: 90%;
+  width: 90%;
+}
+
+.card-body p {
+  text-align: justify;
+}
+
+/* contact */
+.contact {
+  padding: 100px 0;
+  margin-top: 150px;
+}
+
+.contact h2 {
+  font-size: 40px;
+  color: #6366f1;
+  margin: 30px 0;
+  text-align: center;
+  text-shadow: 2px 3px 2px black;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+form {
+  width: 350px;
+  margin: 0 auto;
+  text-align: left;
+  color: white;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+}
+
+form textarea {
+  height: 200px;
+}
+
+form button[type="submit"] {
+  background-color: #6366f1;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 10%;
+}
+
+/* footer */
+.footer {
+  background-color: #6366f1;
+  padding: 10px;
+  box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
+}
+
+.footer .copy {
+  color: #eaeaea;
+  text-align: center;
+  font-size: 13px;
+}
