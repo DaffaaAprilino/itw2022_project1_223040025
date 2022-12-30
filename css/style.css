@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body,
@@ -53,15 +54,17 @@ li a:hover {
 
 /* jumbtoron */
 .jumbotron {
-  padding: 100px 0;
+  padding: 100px;
 }
 
 .jumbotron .container {
-  width: 250px;
   display: flex;
   justify-content: space-between;
-  padding: -100px;
-  margin-left: 300px;
+}
+
+.jumbotron .container .awal {
+  align-items: center;
+  margin: auto;
 }
 
 .jumbotron .container h1 {
