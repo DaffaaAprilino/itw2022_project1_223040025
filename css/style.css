@@ -22,7 +22,11 @@ nav {
   justify-content: space-around;
   /* padding: 20px 0; */
   height: 50px;
+  width: 100%;
+  position: fixed;
   align-items: center;
+  box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
+  z-index: 99999;
 }
 
 nav .logo {
@@ -96,42 +100,6 @@ nav ul li a:hover {
 .menu-toggle input:checked ~ span:nth-child(3) {
   opacity: 0;
   transform: scale(0);
-}
-
-/* responsive breakpoint */
-
-/* ukuran tablet */
-@media screen and (max-width: 768px) {
-  nav ul {
-    width: 50%;
-  }
-}
-
-/* ukuran mobile */
-@media screen and (max-width: 576px) {
-  .menu-toggle {
-    display: flex;
-  }
-  nav ul {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 80%;
-    height: 100vh;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    background-color: #24252b;
-    z-index: -1;
-    transform: translateX(100%);
-    transition: all 1s;
-    opacity: 0;
-  }
-
-  nav ul.slide {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 /* jumbtoron */
@@ -399,4 +367,87 @@ form button[type="submit"] {
   color: #eaeaea;
   text-align: center;
   font-size: 13px;
+}
+
+/* responsive breakpoint */
+
+/* ukuran tablet */
+@media (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+  .jumbotron {
+    padding-bottom: 150px;
+    align-items: center;
+  }
+  .jumbotron .awal h1 {
+    font-size: 3em;
+  }
+  .jumbotron .awal .button {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .jumbotron .container {
+    display: block;
+  }
+  .about .main .about-text {
+    width: 100%;
+    align-self: center;
+  }
+}
+
+/* ukuran mobile */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #24252b;
+    /* z-index: -1; */
+    transform: translateY(-100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .jumbotron .container {
+    display: block;
+  }
+  .about .main {
+    font-size: 1em;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .about .main img {
+    max-width: 100%;
+    height: auto;
+  }
+  .about .main .about-text {
+    width: 100%;
+    align-self: center;
+  }
+
+  .about .main .about-text {
+    align-self: start;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects .column {
+    width: 90%;
+    height: auto;
+  }
 }
