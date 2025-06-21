@@ -1,226 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>My portfolio | Daffaa Aprilino</title>
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav>
-      <div class="logo">
-        <h3>Daffaa A</h3>
-      </div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
 
-      <div class="menu-toggle">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daffaa Aprilino | Portfolio</title>
+  <meta name="description" content="Portfolio Daffaa Aprilino, mahasiswa Teknik Informatika dan Mobile Photographer.">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <!-- home -->
-    <div class="jumbotron" id="home">
-      <div class="container">
-        <div class="awal" data-aos="fade-right" data-aos-duration="1000">
-          <h1>
-            Hi, Perkenalkan <br />
-            Saya <span> Daffaa A </span>
-          </h1>
-          <p>College Student TI & mobile photographer</p>
-          <a href="#contact" class="button"> Kontak Saya</a>
-        </div>
-        <div class="fotopribadi" data-aos="fade-left" data-aos-duration="1000">
-          <img src="img/pribadi2.png" alt="foto" />
-        </div>
-      </div>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo" aria-label="Logo Daffaa Aprilino">Daffaa A</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" role="button" aria-label="Toggle menu" tabindex="0">
+      <span></span><span></span><span></span>
     </div>
+  </nav>
 
-    <!-- about -->
-    <div class="about" id="about">
+  <!-- Main content -->
+  <main>
+    <!-- Home Section -->
+    <header class="jumbotron" id="home" data-aos="fade-up">
+      <div class="jumbotron-text" data-aos="fade-right" data-aos-delay="200">
+        <h1>Hi, Saya <span>Daffaa A</span></h1>
+        <p>College Student TI & Mobile Photographer</p>
+        <a href="#contact" class="button">Kontak Saya</a>
+      </div>
+      <div class="jumbotron-img" data-aos="fade-left" data-aos-delay="400">
+        <img src="img/pribadi2.png" alt="Foto Daffaa Aprilino">
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about" data-aos="fade-up" data-aos-delay="200">
       <h2>About Me</h2>
-      <div class="main" data-aos="fade-down" data-aos-duration="1500">
-        <img src="img/1.png" alt="foto" />
-        <div class="about-text" data-aos="fade-down" data-aos-duration="1500">
-          <p>
-            Halo saya Daffaa Aprilino, saya adalah mahasiswa semester 1 jurusan
-            teknik informatika (IT). dalam Website ini terdapat projek-projek
-            tugas Website yang saya buat. Selain membuat web saya juga
-            menampilkan beberapa hasil foto yang saya ambil sendiri.
-            <br />
-            <br />
-            <a href="http://instagram.com/daffaaprilino_"
-              ><i class="ri-instagram-line"></i
-            ></a>
-            <a href="https://github.com/DaffaaAprilino"
-              ><i class="ri-github-fill"></i
-            ></a>
-          </p>
+      <div class="about-container">
+        <img src="img/1.png" alt="Tentang Saya">
+        <div class="about-text">
+          <p>Halo saya Daffaa Aprilino, mahasiswa Teknik Informatika semester 1. Website ini menampilkan projek dan karya fotografi saya.</p>
+          <div class="social-icons">
+            <a href="https://instagram.com/daffaaprilino_" target="_blank" rel="noopener" aria-label="Instagram Daffaa"><i class="ri-instagram-line"></i></a>
+            <a href="https://github.com/DaffaaAprilino" target="_blank" rel="noopener" aria-label="GitHub Daffaa"><i class="ri-github-fill"></i></a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- skills -->
-    <div class="skills" id="skills">
+    <!-- Skills Section -->
+    <section class="skills" id="skills" data-aos="fade-up" data-aos-delay="200">
       <h2>Skills</h2>
-      <div class="myskills">
-        <p>
-          Dalam bidang web yaitu <span>HTML & CSS</span>, diluar bidang web
-          yaitu <span>photography & editing</span>
-        </p>
-        <div class="iconskills">
-          <img
-            src="img/html-5.png"
-            alt="html"
-            data-aos="flip-left"
-            data-aos-duration="1000"
-          />
-          <img
-            src="img/css-3.png"
-            alt="css"
-            data-aos="flip-left"
-            data-aos-duration="1500"
-          />
-          <img
-            src="img/camera1.png"
-            alt="camera"
-            data-aos="flip-left"
-            data-aos-duration="2000"
-          />
-          <img
-            src="img/editing1.png"
-            alt="editing"
-            data-aos="flip-left"
-            data-aos-duration="2500"
-          />
-        </div>
+      <p>Web: <span>HTML & CSS</span>, Lainnya: <span>Photography & Editing</span></p>
+      <div class="skill-icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <img src="img/camera1.png" alt="Photography">
+        <img src="img/editing1.png" alt="Editing">
       </div>
-    </div>
+    </section>
 
-    <!-- project -->
-    <div class="projects" id="projects">
+    <!-- Projects Section -->
+    <section class="projects" id="projects" data-aos="fade-up" data-aos-delay="200">
       <h2>Projects</h2>
-      <div class="myprojects">
-        <div class="row">
-          <div class="column" data-aos="fade-up" data-aos-duration="1000">
-            <div class="card">
-              <img src="img/projects1.png" alt="Card image" />
-              <div class="card-body">
-                <h3 class="card-title">Membuat Website Animasi Lightbox</h3>
-                <p class="card-text">
-                  Membuat Animasi Lightbox yang didalamnya terdapat tokoh-tokoh
-                  kartun yaitu Looney Tunes. Selain animasi Lightbox terdapat
-                  juga gallery foto yang menunjukan kumpulan tokoh kartun.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="column" data-aos="fade-up" data-aos-duration="1500">
-            <div class="card">
-              <img src="img/projects2.png" alt="Card image" />
-              <div class="card-body">
-                <h3 class="card-title">Lomba Potret Kemerdekaan</h3>
-                <p class="card-text">
-                  Lomba fotografi yang memiliki judul "Mencintaimu Sang Merah
-                  Putih". Memiliki makna yaitu cinta kepada tanah air dengan
-                  mengutamakan bangsa dan negara, sangsaka merah putih pun
-                  sebagai saksi perjuang Indonesia.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="column" data-aos="fade-up" data-aos-duration="2000">
-            <div class="card">
-              <img src="img/projects3.png" alt="Card image" />
-              <div class="card-body">
-                <h3 class="card-title">Lomba Kisah Kota Kembang</h3>
-                <p class="card-text">
-                  Lomba fotografi yang memiliki judul "Menulusuri Jalanan Kota
-                  Kembang". Memiliki makna yaitu salah satu jalanan yang
-                  terkenal dikota bandung yang memiliki banyak kenangan untuk
-                  mereka yang pernah melewatkan hari-harinya disini.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="column" data-aos="fade-up" data-aos-duration="2500">
-            <div class="card">
-              <img src="img/projects4.png" alt="Card image" />
-              <div class="card-body">
-                <h3 class="card-title">Human Interest</h3>
-                <p class="card-text">
-                  Sebuah foto yang miliki makna yaitu tentang seorang pria
-                  berusia sekitar 52 tahun bermata pecaharian sebagai tukang
-                  tambal sepatu atau biasa dikenal tukang sol sepatu. Selalu
-                  bekerja keras demi menghidupi keluarganya.
-                </p>
-              </div>
-            </div>
-          </div>
+      <div class="project-cards">
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+          <img src="img/projects1.png" alt="Project 1">
+          <h3>Animasi Lightbox</h3>
+          <p>Animasi galeri Lightbox bertema tokoh kartun Looney Tunes.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+          <img src="img/projects2.png" alt="Project 2">
+          <h3>Potret Kemerdekaan</h3>
+          <p>Foto bertema cinta tanah air "Mencintaimu Sang Merah Putih".</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="500">
+          <img src="img/projects3.png" alt="Project 3">
+          <h3>Lomba Kisah Kota Kembang</h3>
+          <p>Menelusuri Jalanan Kota Kembang.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="600">
+          <img src="img/projects4.png" alt="Project 4">
+          <h3>Human Interest</h3>
+          <p>Selalu bekerja keras demi menghidupi keluarganya.</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- contact -->
-    <div class="contact" id="contact">
+    <!-- Contact Section -->
+    <section class="contact" id="contact" data-aos="fade-up" data-aos-delay="200">
       <h2>Contact</h2>
-      <form
-        action="/send-message"
-        method="post"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-      >
-        <label for="name">Nama:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Masukan nama kamu"
-        />
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Masukan email kamu"
-        />
-        <label for="message">Pesan:</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          placeholder="isi dengan pesan atau saran"
-        ></textarea>
+      <form action="/send-message" method="post" aria-label="Formulir Kontak">
+        <input type="text" name="name" placeholder="Nama kamu" required />
+        <input type="email" name="email" placeholder="Email kamu" required />
+        <textarea name="message" rows="5" placeholder="Pesan atau saran" required></textarea>
         <button type="submit">Kirim</button>
       </form>
-    </div>
+    </section>
+  </main>
 
-    <!-- footer -->
-    <div class="footer">
-      <p class="copy">© 2022. Daffaa Aprilino.</p>
-    </div>
+  <!-- Footer -->
+  <footer class="footer" data-aos="fade-up" data-aos-delay="200">
+    <p>&copy; 2022 Daffaa Aprilino</p>
+  </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: true,
-      });
-    </script>
-    <script src="js/script.js"></script>
-  </body>
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+  </script>
+</body>
+
 </html>
